@@ -24,7 +24,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.js': ['coverage']
+      'src/*.js': ['coverage']
     },
 
     // test results reporter to use
@@ -36,8 +36,6 @@ module.exports = function(config) {
       type: 'lcov',
       dir: 'coverage/'
     },
-
-    plugins: ['karma-coverage'],
 
     // web server port
     port: 9876,
